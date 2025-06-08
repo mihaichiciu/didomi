@@ -5,7 +5,7 @@ module.exports = async () => {
   const container = await new PostgreSqlContainer('postgres:17').start();
   const databaseUrl = container.getConnectionUri();
 
-  console.log('[setup] PostgreSQL running at:', databaseUrl);
+  console.log('PostgreSQL running at:', databaseUrl);
 
   process.env.DATABASE_URL = databaseUrl;
 

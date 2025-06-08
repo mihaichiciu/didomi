@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "tsc",
-    "start": "npx ts-node -r tsconfig-paths/register --files src/app.ts",
+    "start": "npx ts-node -r tsconfig-paths/register --files src/server.ts",
     "prisma:migrate": "npx prisma migrate dev",
     "prisma:push": "npx prisma db push",
     "prisma:generate": "npx prisma generate",
@@ -13,7 +13,7 @@
     "lint:fix": "eslint --fix . --ext .js,.ts",
     "prettier": "prettier --check **/*.{js,ts}",
     "prettier:fix": "prettier --write **/*.{js,ts}",
-    "test": "jest --forceExit"
+    "test": "jest --runInBand --detectOpenHandles"
   },
   "keywords": [],
   "author": "",

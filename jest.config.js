@@ -11,6 +11,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts',
     '!src/app.ts',
+    '!src/server.ts',
     '!src/types/types.ts',
     '!src/utils/asyncHandler.ts',
     '!src/utils/apiErrors.ts',
