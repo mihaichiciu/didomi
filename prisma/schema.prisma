@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ConsentType {
+  email_notifications
+  sms_notifications
+}
+
+model User {
+  id      String   @id @default(uuid())
+  email   String   @unique
+  consents Json     @default("[]")
+  events  Event[]
+}
+
+model Event {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  consents  Json
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
