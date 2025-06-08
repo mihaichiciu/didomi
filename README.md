@@ -10,7 +10,7 @@ This project implements a simple Preference Center API for managing user consent
 - PostgreSQL (using Docker)
 - Prisma (ORM)
 - Zod (Validation)
-- Jest (Testing)
+- Jest & Testcontainers (Testing)
 - ESLint (Linting)
 - Prettier (Code Formatting)
 
