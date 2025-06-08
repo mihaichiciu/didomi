@@ -120,6 +120,8 @@ This setup provides robust isolation at both the test suite and individual test 
 
 ## API Documentation
 
+A Postman collection file (`postman_collection.json`) is included in the project root. You can import this file into Postman to easily interact with the API endpoints.
+
 The API supports the following endpoints:
 
 ### Users
