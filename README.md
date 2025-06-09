@@ -43,7 +43,7 @@ This project implements a simple Preference Center API for managing user consent
     cp .env.example .env
     ```
 
-    The `DATABASE_URL` in your `.env` file should point to your development database, which by default is `postgresql://user:password@localhost:5433/didomi?schema=public`.
+    The `DATABASE_URL` in your `.env` file should point to your development database, which by default is `postgresql://postgres:postgres@localhost:5433/didomi?schema=public`.
 
     For **testing**, the `npm test` script automatically sets a separate `DATABASE_URL` pointing to `localhost:5434/didomi_test`, ensuring an isolated test environment.
 
