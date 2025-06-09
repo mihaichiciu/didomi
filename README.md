@@ -26,7 +26,7 @@ This project implements a simple Preference Center API for managing user consent
 
     ```bash
     git clone <repository_url>
-    cd didomi-challenge
+    cd didomi
     ```
 
 2.  **Install dependencies:**
