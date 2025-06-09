@@ -38,7 +38,7 @@
               "variable": [
                 {
                   "key": "userId",
-                  "value": "dc856d87-6d0d-43f6-8919-1478d69b6e73"
+                  "value": "53c9f784-b702-48d0-b62a-c99bcfa686ef"
                 }
               ]
             }
@@ -52,7 +52,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"name\": \"Test User\",\n\t\"email\": \"test@example.com\"\n}",
+              "raw": "{\n\t\"email\": \"test@example.com\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -76,7 +76,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"name\": \"Test User\"\n}",
+              "raw": "{\n\t\"email\": \"TestEmail\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
